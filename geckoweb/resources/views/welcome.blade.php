@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        @vite('resources/sass/app.scss')
+    @vite('resources/scss/app.scss', 'resources/js/app.js')
         <title>Laravel</title>
     </head>
     <body>
