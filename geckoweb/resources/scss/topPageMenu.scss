@@ -1,62 +1,72 @@
 
-.topPageManu {
-position: absolute;
-top: 10%;
-left: 50%;
-width: 100%;
--webkit-transform: translate(-50%, -50%);
--moz-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-&__ul{  
-padding-right: 35px;
-padding-top:40px;
-padding-bottom:40px;
-text-align: right;
-border-bottom:solid 2px azure;
-width:75%;
-margin-left: auto; 
-margin-right: auto;
+.topPageMenu {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
-&__p{
-display: inline-block;
-padding-bottom:20px;
-padding-right:20px;
+    &__ul{  
+        padding-right: 35px;
+        padding-top:40px;
+        padding-bottom:40px;
+        text-align: right;
+        border-bottom:solid 2px azure;
+        width:75%;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    &__item{
+        display: inline-block;
+        padding-bottom:20px;
+        padding-right:20px;
+    }
+
+    &__link{
+        display: block;
+        color: azure;
+        text-decoration: none;
+        font-family:"ＭＳ 明朝", sans-serif;
+        font-weight:bold;
+    }
+
+    &__link::first-line{
+        font-size: 20px;
+    }
+
+    &__link:hover{
+        transform: perspective(100px) translateZ(20px);
+    }
+
+    &__leo {
+        top:30px;
+        position:absolute;
+        overflow: hidden;
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        cursor: pointer;
+    }
+
+    &__leo:hover{
+        transform: perspective(100px) translateZ(20px);
+    }
+    
+    &__leoimg {
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        height:100%;
+    }
+
+
 }
-&__p a{
-display: block;
-color: azure;
-text-decoration: none;
-font-family:"ＭＳ 明朝", sans-serif;
-font-weight:bold;
-&__a::first-line{
-font-size: 20px;
-}
-&__p:hover{
-transform: perspective(100px) translateZ(20px);
-}
-}
-.leo {
-top:30px;
-position:absolute;
-overflow: hidden;
-width:100px;
-height:100px;
-border-radius:50%;
-cursor: pointer;
-}
-.leo img{
-position:relative;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--webkit-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-height:100%;
-}
-.leo:hover{
-transform: perspective(100px) translateZ(20px);
-}
-}}
 
 
     /* .convince{
@@ -73,6 +83,5 @@ transform: perspective(100px) translateZ(20px);
     .convince:hover{
     transform: perspective(100px) translateZ(20px);
     } */
-    
     
     
