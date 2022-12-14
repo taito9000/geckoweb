@@ -2,34 +2,32 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-    @vite('resources/scss/app.scss', 'resources/js/app.js')
+        @vite('resources/scss/app.scss', 'resources/js/app.js','resources/scss/topPageMenu.scss','resources/scss/pageTitle.scss')
         <title>Laravel</title>
     </head>
     <body>
-      <section class="visual">
-        <div class="videoBox">
-            <video class="video" muted autoplay loop playsinline>
-                <source src="C:\Users\ada02\OneDrive - 日本大学\デスクトップ\reptileweb\src\reptile.mp4" type="video/mp4" >
-            </video>
-        </div>
-        <div class="textBox">
-         
-            <ul class="menu">
-                <div class="leo">
-                    <a href="C:\Users\ada02\OneDrive - 日本大学\デスクトップ\reptileweb\html\index.html">
-                        <img src="C:\Users\ada02\OneDrive - 日本大学\デスクトップ\reptileweb\src\leo0002 (2).jpg">
-                        </a>
+
+            <div class="video-Box">
+                <video class="video-box__video" muted autoplay loop playsinline>
+                    <source src="/public\storage\video\reptile.mp4" type="video/mp4" >
+                </video>
+            </div>
+            <div class="topPageMenu">
+                <div class="topPageMenu__leo">
+                    <a href="">
+                        <img src="{{ asset('geckoweb\public\storage\photo\leo0002 (2).jpg')}}">
+                    </a>
                 </div>
-                <li><a href="C:\Users\ada02\OneDrive - 日本大学\デスクトップ\reptileweb\html\pages\Intro.html">INTRO</a></li>
-                <li><a href="C:\Users\ada02\OneDrive - 日本大学\デスクトップ\reptileweb\html\pages\howToCare.html">飼育方法</a></li>
-                <li><a href="C:\Users\ada02\OneDrive - 日本大学\デスクトップ\reptileweb\html\pages\morph.html">品種紹介</a></li>
-                <li><a href="C:\Users\ada02\OneDrive - 日本大学\デスクトップ\reptileweb\html\pages\qaBoard.html">質問板</a></li>
-      
-            </ul>
-            <h1>ヒョウモントカゲモドキ<br/>飼育入門</h1>
-            
-        </div>
-        <button class="convince">動画を見る</div>
-    </section>
+                <p><a href="">INTRO</a></p>
+                <p><a href="">飼育方法</a></p>
+                <p><a href="">品種紹介</a></p>
+                <p><a href="">質問板</a></p>
+            </div>
+        
+            <div class=pageTitle>ヒョウモントカゲモドキ<br/>飼育入門</div>
+        
+
+            <button class="convince">他の爬虫類の画像見る</div>
+  
     </body>
 </html>
