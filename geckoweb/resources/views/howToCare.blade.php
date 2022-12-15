@@ -38,7 +38,7 @@
                     </li>
                 </ul>
         
-                <h1 class = "topPageTitle">ヒョウモントカゲモドキ<br/>飼育入門</h1>
+                <h1 class = "topPageTitle">飼育方法</h1>
             </div>
 
         </header>

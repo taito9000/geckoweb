@@ -1,4 +1,20 @@
 @use 'header';
-@use 'pageTitle';
+
+@use 'imgBackground.scss';
+
+@use 'mainContents';
+
+@use'menuLeoImg.scss';
+@use 'pagesMenu';
+@use 'pagesTitle';
+
 @use 'topPageMenu';
-@use 'videoBox';
+
+
+
+@use 'topPageTitle';
+
+
+
+
+@use 'videoZone';
