@@ -3,5 +3,9 @@
 .mainContents{
     position: absolute;
     font-family:"ＭＳ 明朝";
-    
+    background:skyblue;
+    &__article{
+        color:azure;
+    }
+
 }

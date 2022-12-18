@@ -24,8 +24,8 @@
 
                 <ul class="topPageMenu__ul">
                    
-                    <li class="pagesMenu__item">
-                        <a class="pagesMenu__link" href="/intro">INTRO</a>
+                    <li class="topPageMenu__item">
+                        <a class="topPageMenu__link" href="/intro">INTRO</a>
                     </li>
                     <li class="topPageMenu__item">
                         <a class="topPageMenu__link" href="/howToCare">飼育方法</a>
@@ -42,21 +42,18 @@
             </div>
         </header>
         <main>
-        <main class="intro">
+        <div class="intro">
             <div class="imgBackGround">
                 <div class="imgBackGround__img">
                     <img src="{{ asset('/photo/whiteMarble (1).jpg')}}">
                 </div>
             </div>
 
-            <div class="pagesMenu">
-                <h1 class = "pagesTitle">INTRO</h1>
-            </div>
-
-       
+            
+        <div class = "pagesTitle">INTRO</div>
       
-        <div class="intro__mainContents">
-            <div class="mainContents__article">
+        <div class="intro">
+            <div class="intro__article">
               僕が、ヒョウモントカゲモドキ（レオパードゲッコー、以下レオパ）を初めて飼育したのは２００５年の
             ７歳の誕生日でした。</br>
             </br>それ以来いろんな生き物を飼育し２０１８年からは約３年間レオパのブリーダーの下で働いておりました。</br></br>
@@ -68,7 +65,7 @@
             よろしくお願いいたします！
             </div>
         </div>
-        </main>
+</div>
         </main>
     </body>
 </html>

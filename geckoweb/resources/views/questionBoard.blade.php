@@ -43,11 +43,13 @@
         </header>
             
 
-            <div class="mainContents">
-                <input type= "text" name="postQ" value class="postQuestion" placeholder="質問を入力してください">
-                <button type="submit">送信</button>
-                <input type= "text" name="searchQ" value class="searchQuestion" placeholder="過去の質問を検索します">
-                <button type= "submit">検索</button>
+            <div class="postAndSearch">
+                <div class="postAndSearch__texts">
+                    <input type= "text" name="postQ" value class="postQuestion" placeholder="質問を入力してください">
+                    <button type="submit">送信</button>
+                    <input type= "text" name="searchQ" value class="searchQuestion" placeholder="過去の質問を検索します">
+                    <button type= "submit">検索</button>
+                </div>
             </div>
 
     </body>
