@@ -2,21 +2,25 @@
 
 @use 'imgBackground.scss';
 
+@use 'intro';
+
+
+
 @use 'mainContents';
 
 @use'menuLeoImg.scss';
+
 @use 'pagesMenu';
+
 @use 'pagesTitle';
+
+@use "qaBoardTextbox";
+
+@use "questions";
 
 @use 'topPageMenu';
 
-
-
 @use 'topPageTitle';
-
-
-@use 'intro';
 
 @use 'videoZone';
 
-@use "postAndSearch";

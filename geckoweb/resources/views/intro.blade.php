@@ -42,8 +42,8 @@
 
         </header>
 
-        <div class="mainContents">
-            <div class="mainContents__article">
+        <div class="intro">
+            <div class="intro__article">
               僕が、ヒョウモントカゲモドキ（レオパードゲッコー、以下レオパ）を初めて飼育したのは２００５年の
             ７歳の誕生日でした。</br>
 </br>それ以来いろんな生き物を飼育し２０１８年からは約３年間レオパのブリーダーの下で働いておりました。</br></br>

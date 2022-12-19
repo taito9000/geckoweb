@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         @vite('resources/scss/app.scss', 'resources/js/app.js') 
               <title>Geckoweb</title>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     </head>
     <body>
         <header class="header">
@@ -41,16 +42,16 @@
             </div>
 
         </header>
-            
-
-            <div class="postAndSearch">
-                <div class="postAndSearch__texts">
-                    <input type= "text" name="postQ" value class="postQuestion" placeholder="質問を入力してください">
+        
+            <div class="qaBoardTextbox">
+                    <input type= "text" name="postQ" size="20" value class="postQuestion" placeholder="質問を入力してください">
                     <button type="submit">送信</button>
-                    <input type= "text" name="searchQ" value class="searchQuestion" placeholder="過去の質問を検索します">
-                    <button type= "submit">検索</button>
-                </div>
             </div>
+            <div class="questions">
+                投稿された質問
+            </div>
+   
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     </body>
 </html>
