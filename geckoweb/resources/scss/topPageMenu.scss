@@ -14,7 +14,7 @@
         padding-top:40px;
        
         text-align: right;
-        border-bottom:solid 2px azure;
+        border-bottom:solid 2px #fefee3;
         width:75%;
         margin-left: auto; 
         margin-right: auto;
@@ -28,7 +28,7 @@
 
     &__link{
         display: block;
-        color: azure;
+        color:#fefee3;
         text-decoration: none;
         font-family:"ＭＳ 明朝", sans-serif;
         font-weight:bold;
@@ -45,19 +45,5 @@
 }
 
 
-    /* .convince{
-    position:absolute;
-    padding:20px;
-    margin-left:20px;
-    color:#FF367F;
-    background-color:transparent;
-    right:60px;
-    bottom:100px;
-    cursor: pointer;
-    
-    } 
-    .convince:hover{
-    transform: perspective(100px) translateZ(20px);
-    } */
     
     

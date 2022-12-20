@@ -14,9 +14,7 @@
 
 @use 'pagesTitle';
 
-@use "qaBoardTextbox";
 
-@use "questions";
 
 @use 'topPageMenu';
 
@@ -24,3 +22,12 @@
 
 @use 'videoZone';
 
+@use 'mainQaboard';
+
+body{
+    background-color:#4c956c;
+}
+
+// 2c6e49
+// 4c956c
+// fefee3

@@ -1,13 +1,33 @@
+.mainContents {
+    display: flex; 
+    position: absolute;
+    font-family:"sans-serif";
+    max-width:80%;
+    min-height:30%;
+    background:#2c6e49;
+    border-radius:30px;
+    top:30%;
+    left:11%;
+  &__img {
+    
+    padding:3%;
+    border-radius:30px;
+    text-align:right;
+  }
 
   
-.mainContents{
-    position: absolute;
-    font-family:"ＭＳ 明朝";
-    background:skyblue;
-    border-radius:30px;
-    &__article{
-        color:azure;
-        padding-top:10%;
-    }
-
+  &__title {
+    position:relative;
+    left:10px;
+    font-size:28px;
+    font-weight: bold;
+    color:#fefee3;
+    
+  }
+  &__text {
+    padding-left:8px;
+    font-size:24px;
+    text-align: left;
+    color:#fefee3;
+  }
 }
