@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\questionBoardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,22 +15,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/welcome');
 });
 
 
 Route::get('intro', function () {
-    return view('/intro');
+    return view('pages/intro');
 });
 
-Route::get('/howToCare', function () {
-    return view('howToCare');
+Route::get('howToCare', function () {
+    return view('pages/howToCare');
 });
 
-Route::get('/questionBoard', function () {
-    return view('questionBoard');
+
+Route::get('morph', function () {
+    return view('pages/morph');
 });
 
-Route::get('/morph', function () {
-    return view('morph');
-});
+
+//お問い合わせフォーム
+
+Route::get('questionBoard',[questionBoardController::class,'questionBoard'])->name('questionBoard');
+
+Route::post('questionBoard', [questionBoardController::class, 'sendMail']);
+Route::get('complete',[questionBoardController::class,'complete'])->name('complete');
