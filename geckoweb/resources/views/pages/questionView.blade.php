@@ -47,7 +47,7 @@
       お問い合わせ内容に対する回答は私見であり、それに対するいかなる責任も負いかねます。<br>
       以上のことに同意の上、以下のお問い合わせ内容をご入力後、ご送信下さい。<br>
     </p>
-    <form action="{{route('questionBoard')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('questionBoard')}}" method="POST">
       @csrf
         <input id="title" class="mainQaboard__textTitle" type="text" placeholder="タイトルを入力してください。" name="title" value="{{old('title')}}">
         @if($errors->has('title'))

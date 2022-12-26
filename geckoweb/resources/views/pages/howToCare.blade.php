@@ -7,12 +7,6 @@
     </head>
     <body>
         <header class="header">
-        <!-- <div class="imgBackGround">
-                <div class="imgBackGround__img">
-                    <img src="{{ asset('/photo/whiteMarble (1).jpg')}}">
-                </div>
-            </div> -->
-
             <div class="menuLeoImg">
                 <a href="/">
                     <img  class="menuLeoImg__img" src="{{ asset('/photo/leo0002 (2).jpg')}}">
@@ -59,6 +53,8 @@
                     <img src="{{ asset('/photo/desertcage (1).jpg')}}">
                 </div>
             </div>
+            
         </div>
+        
     </body>
 </html>

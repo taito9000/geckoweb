@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\questionBoardController;
+use App\Http\Controllers\Admin\AdminQuestionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +41,13 @@ Route::get('questionBoard',[questionBoardController::class,'questionBoard'])->na
 
 Route::post('questionBoard', [questionBoardController::class, 'sendMail']);
 Route::get('complete',[questionBoardController::class,'complete'])->name('complete');
+
+
+Route::get('/admin/index',[AdminQuestionController::class,'index'])->name('admin.index');;
+Route::get('/admin/edit', [AdminQuestionController::class, 'edit'])->name('admin.create');;
+Route::post('/admin/index', [AdminQuestionController::class, 'store'])->name('admin.store');
+
+
+
+
+

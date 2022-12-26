@@ -21,7 +21,7 @@ class questionBoardController extends Controller
 
         //メールの送信
 
-        return to_route('pages/complete');
+        return view('pages/complete');
     }
 
     public function complete(){

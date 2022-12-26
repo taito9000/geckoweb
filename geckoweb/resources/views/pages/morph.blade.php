@@ -39,19 +39,31 @@
         </header>
         <div class="mainContents"> 
         
-        <div class="mainContents__right">
-            <p class="mainContents__title">タンジェリン</p>
-                <p class="mainContents__text">
-                 タンジェリンはハイイエローをオレンジが強くなるように選別交配された品種になります。
-                 有名なのは、アメリカの有名なブリーダーJMGReptileが作出した「ブラッドタンジェリン」や全てのタンジェリンのラインを
-                 混ぜて、最強のタンジェリンを作ろうと作出された「マンダリンタンジェリン」が有名です。
-                </p>
+            <div class="mainContents__right">
+                <p class="mainContents__title">タンジェリン</p>
+                    <p class="mainContents__text">
+                    タンジェリンはハイイエローをオレンジが強くなるように選別交配された品種になります。
+                    有名なのは、アメリカの有名なブリーダーJMGReptileが作出した「ブラッドタンジェリン」や全てのタンジェリンのラインを
+                    混ぜて、最強のタンジェリンを作ろうと作出された「マンダリンタンジェリン」が有名です。
+                    </p>
+                </div>
+                <div class="mainContents__img">
+                    <img src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                </div>
             </div>
-            <div class="mainContents__img">
-                <img src="{{ asset('/photo/leo0002 (2).jpg')}}">
+            <div class="mainContents__right">
+                <p class="mainContents__title">タンジェリン</p>
+                    <p class="mainContents__text">
+                    タンジェリンはハイイエローをオレンジが強くなるように選別交配された品種になります。
+                    有名なのは、アメリカの有名なブリーダーJMGReptileが作出した「ブラッドタンジェリン」や全てのタンジェリンのラインを
+                    混ぜて、最強のタンジェリンを作ろうと作出された「マンダリンタンジェリン」が有名です。
+                    </p>
+                </div>
+                <div class="mainContents__img">
+                    <img src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                </div>
             </div>
         </div>
-    </div>
       
     </body>
 </html>
