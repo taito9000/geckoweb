@@ -1,7 +1,7 @@
 
 .topPageMenu {
-    position: absolute;
-    top: 7%;
+    position: relative;
+
     left: 50%;
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
@@ -11,8 +11,8 @@
 
     &__ul{  
         padding-right: 35px;
-        padding-top:40px;
-       
+        padding-top:180px;
+       padding-bottom:5px;
         text-align: right;
         border-bottom:solid 2px #fefee3;
         width:75%;
