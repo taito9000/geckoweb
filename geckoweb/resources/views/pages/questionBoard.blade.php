@@ -25,6 +25,9 @@
               <li class="pagesMenu__item">
                 <a class="pagesMenu__link" href="/morph">品種紹介</a>
               </li>
+              <!-- <li class="pagesMenu__item">
+                  <a class="pagesMenu__link" href="/wordDetails">用語等紹介</a>
+              </li> -->
               <li class="pagesMenu__item">
                 <a class="pagesMenu__link" href="/questionBoard">質問板</a>
               </li>
@@ -84,20 +87,8 @@
       <div>qusetions</div>
     </div>
     <script>
-    // ねこちゃんたち追加
-    $('#js-pulldown').select2();
 
-    // 画像プレビュー
-    document.getElementById('image').addEventListener('change', e => {
-        const previewImageNode = document.getElementById('previewImage')
-        const fileReader = new FileReader()
-        fileReader.onload = () => previewImageNode.src = fileReader.result
-        if (e.target.files.length > 0) {
-            fileReader.readAsDataURL(e.target.files[0])
-        } else {
-            previewImageNode.src = previewImageNode.dataset.noimage
-        }
-    })
-</script>
+ 
+    </script>
     </body>
 </html>

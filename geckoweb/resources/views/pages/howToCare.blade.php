@@ -26,6 +26,9 @@
                     <li class="pagesMenu__item">
                         <a class="pagesMenu__link" href="/morph">品種紹介</a>
                     </li>
+                    <!-- <li class="pagesMenu__item">
+                        <a class="pagesMenu__link" href="/wordDetails">用語等紹介</a>
+                    </li> -->
                     <li class="pagesMenu__item">
                         <a class="pagesMenu__link" href="/questionBoard">質問板</a>
                     </li>
@@ -38,7 +41,7 @@
 
         <div class="mainContents"> 
         
-            <div class="mainContents__right">
+            <div class="mainContents__left">
                 <p class="mainContents__title">ケージ</p>
                     <p class="mainContents__text">
                         飼育ケージは通気性が良く、観察しやすいものを選びましょう。

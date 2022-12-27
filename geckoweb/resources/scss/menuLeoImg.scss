@@ -1,14 +1,14 @@
-
-
 .menuLeoImg{
-    top:1%;    
+    top:4%;   
     left:13%;
+
     position:relative;
     overflow: hidden;
     width:100px;
     height:100px;
     border-radius:50%;
-    z-index:10;
+    z-index:2;
+
     cursor: pointer;
         &__img {
         position:relative;
@@ -33,7 +33,7 @@
     width:100px;
     height:100px;
     border-radius:50%;
-    z-index:10;
+    z-index:2;
     cursor: pointer;
         &__img {
         position:relative;
@@ -49,3 +49,4 @@
         }
     }
 }
+

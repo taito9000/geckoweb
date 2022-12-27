@@ -32,6 +32,9 @@
                     <li class="topPageMenu__item">
                         <a class="topPageMenu__link" href="/morph">品種紹介</a>
                     </li>
+                    <!-- <li class="pagesMenu__item">
+                        <a class="pagesMenu__link" href="/wordDetails">用語等紹介</a>
+                    </li> -->
                     <li class="topPageMenu__item">
                         <a class="topPageMenu__link" href="/questionBoard">質問板</a>
                     </li>

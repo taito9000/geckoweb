@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('image');
             $table->text('body');
+            $table->unsignedBigInteger('parent')->nullable();
             $table->timestamps();
         });
     }

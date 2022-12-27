@@ -1,33 +1,35 @@
 .mainContents {
     display: flex; 
-    position: absolute;
+    position: relative;
     font-family:"sans-serif";
     max-width:80%;
     min-height:30%;
     background:#2c6e49;
-    border-radius:30px;
-    top:30%;
+    border-radius:20px;
     left:11%;
-  &__img {
-    
-    padding:3%;
-    border-radius:30px;
-    text-align:right;
-  }
-
+    margin-bottom:50px;
   
+
   &__title {
     position:relative;
-    left:10px;
+    top:30px;
+    left:35px;
     font-size:28px;
     font-weight: bold;
     color:#fefee3;
-    
   }
   &__text {
-    padding-left:8px;
+    position:relative;
+    padding:6% 3% 6% 3%;
     font-size:24px;
     text-align: left;
     color:#fefee3;
+      
+  &__img {
+    position:absolute;
+    padding:6% 3% 6% 3%;
+    border-radius:30px;
+ 
+  }
   }
 }

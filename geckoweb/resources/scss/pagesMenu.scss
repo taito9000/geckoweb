@@ -24,7 +24,10 @@
         display: inline-block;
         padding-bottom:20px;
         padding-right:20px;
+        padding-bottom:32px;
+        
     }
+    
 
     &__link{
         display: block;
@@ -42,5 +45,8 @@
         transform: perspective(100px) translateZ(20px);
     }
 
-}
+ 
 
+
+
+}

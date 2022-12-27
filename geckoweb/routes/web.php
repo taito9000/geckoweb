@@ -28,7 +28,9 @@ Route::get('intro', function () {
 Route::get('howToCare', function () {
     return view('pages/howToCare');
 });
-
+Route::get('wordDetails', function () {
+    return view('pages/wordDetails');
+});
 
 Route::get('morph', function () {
     return view('pages/morph');
