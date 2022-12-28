@@ -4,19 +4,20 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Question;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminQuestionController extends Controller
 {
-    //質門一覧画面
+    //質問一覧画面
     public function index()
     {
         return view('admin.index');
     }
 
-  //回答ページ
-    public function edit()
+    //詳細ページ
+    public function edit(Question $question)
     {
-        return view('admin.edit');
+        return view('admin.edit', ['question' => $question]);
     }
     public function store(Request $request)
     {
