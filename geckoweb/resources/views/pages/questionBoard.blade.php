@@ -50,7 +50,7 @@
       お問い合わせ内容に対する回答は私見であり、それに対するいかなる責任も負いかねます。<br>
       以上のことに同意の上、以下のお問い合わせ内容をご入力後、ご送信下さい。<br>
     </p>
-    <form action="{{route('questionBoard')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('questionBoard.store')}}" method="POST" enctype="multipart/form-data">
       @csrf
         <input id="title" class="mainQaboard__textTitle" type="text" placeholder="タイトルを入力してください。" name="title" value="{{old('title')}}">
         @if($errors->has('title'))
@@ -59,7 +59,7 @@
 
         <p class="mainQaboard__letters--contact">お問い合わせ内容</p>
         
-      <textarea id="body" class="mainQaboard__textBody" type="text" cols="130" rows="20" placeholder="お問い合わせ内容を入力してください。" name="body"></textarea>
+      <textarea id="body" class="mainQaboard__textBody" type="text" cols="130" rows="20" placeholder="お問い合わせ内容を入力してください。" name="body">{{old('body')}}</textarea>
         @if($errors->has('body'))
           <p class="mainQaboard__errorMessage">{{$errors->first('body')}}</p>
         @endif
@@ -67,28 +67,69 @@
       <div class="mainQaboard__img">
         <p class="mainQaboard__letters--img">画像</p>
         <input id="image" type="file" accept='image/*' name="image">
+        <img id="previewImage">
         <button type="submit">送信</button>
       </div>
     </form>
     <div class="mainQaboard__questionsTitle">
       投稿された質問
     </div>
-    <div class="mainQaboard__questions">
-      <div>qusetions</div>
-    </div>
-
-    <div class="mainQaboard__questions">
-      <div>qusetions</div>
-    </div> 
-    <div class="mainQaboard__questions">
-      <div>qusetions</div>
-    </div> 
-    <div class="mainQaboard__questions">
-      <div>qusetions</div>
+    <div class="mainQaboard__questionsWrapper">
+      <div class="mainQaboard__question">
+        <div>qusetions</div>
+      </div>
     </div>
     <script>
+          // 画像プレビュー
+    document.getElementById('image').addEventListener('change', e => {
+        const previewImageNode = document.getElementById('previewImage')
+        const fileReader = new FileReader()
+        fileReader.onload = () => previewImageNode.src = fileReader.result
+        if (e.target.files.length > 0) {
+            fileReader.readAsDataURL(e.target.files[0])
+        } else {
+            previewImageNode.src = previewImageNode.dataset.noimage
+        }
+    })
 
- 
+        //question load
+        $(function(){
+      $.ajax({
+        type: "get", //HTTP通信の種類
+        url:"{{route('api.questionBoard.index')}}", //通信したいURL
+        dataType: 'json'
+      })
+      .done((res)=>{
+        //お問い合わせHTML作成
+        res.forEach(threads => {  //質問の配列をループ
+          let questions = ''; 
+          threads.forEach(question => { 
+            const question_element = 
+              question.parent ? 
+                '' :
+                `
+                  <div class="mainQaboard__question${question.parent?'--child':''}">
+                    <div class="mainQaboard__questionImageWrapper">
+                      ${question.image ? 
+                      `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
+                      ''}
+                    </div>
+                    <div class="mainQaboard__questionTitle">
+                      <a href="/questionBoard/${question.id}">${question.title}</a>
+                    </div>
+                  </div>
+                `
+            questions += question_element; //使用して組み立てたHTMLを追加して行く
+          });
+          $(".mainQaboard__questionsWrapper").append(questions);//ラッパー要素に組み立てたHTMLを追加
+        });
+      })
+      //通信が失敗したとき
+      .fail((error)=>{
+        console.log(error.statusText)
+      })
+    });
+
     </script>
     </body>
 </html>

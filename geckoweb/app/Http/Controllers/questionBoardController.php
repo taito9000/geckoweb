@@ -17,6 +17,7 @@ class questionBoardController extends Controller
         $request->validate([
             "title" => ['required', 'string', 'max:255'],
             "body" => ['required', 'string', 'max:1500'],
+            "image"=>['nullable'],
             'parent' => [
                 function ($attribute, $value, $fail) {
                     if (isset($value)) {
@@ -42,8 +43,6 @@ class questionBoardController extends Controller
         $question->body = $request->body; //本文
         $question->parent = $request->parent; //親ID
         $question->save(); //作成したインスタンスを保存
-
-        //メールの送信
 
         return redirect()->route('questionBoard.complete');
         //return view('pages/complete');

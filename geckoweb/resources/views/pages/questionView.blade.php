@@ -106,7 +106,7 @@
       .done((res)=>{
         //お問い合わせHTML作成
         res.forEach(question => {
-          const qestion_element = `
+          const question_element = `
             <div class="mainQaboard__question${question.parent?'--child':''}">
               <div class="mainQaboard__questionImageWrapper--large">
               ${question.image ? 
@@ -121,7 +121,7 @@
               </div> 
             </div>
         `
-          $(".mainQaboard__questionsWrapper").append(qestion_element);
+          $(".mainQaboard__questionsWrapper").append(question_element);
         });
       })
       //通信が失敗したとき
