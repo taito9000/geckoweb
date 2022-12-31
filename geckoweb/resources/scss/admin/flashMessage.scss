@@ -1,0 +1,9 @@
+.flashMessage{
+    position: relative;
+    &__success{
+        border-radius: 1em;
+        color: black;
+        font-size: 2rem;
+        background-color: #98fb98;
+    }
+}

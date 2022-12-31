@@ -46,17 +46,7 @@ Route::get('complete','complete')->name('complete'); //完了画面 questionBoar
 Route::get('{question}','show')->name('show');    //質問詳細表示 questionBoard.show
 });
 
-
-// Route::get('questionBoard',[questionBoardController::class,'questionBoard'])->name('questionBoard');
-
-// Route::post('questionBoard', [questionBoardController::class, 'sendMail']);
-// Route::get('complete',[questionBoardController::class,'complete'])->name('complete');
-
-
-// Route::get('/admin/index',[AdminQuestionController::class,'index'])->name('admin.index');;
-// Route::get('/admin/edit', [AdminQuestionController::class, 'edit'])->name('admin.create');;
-// Route::post('/admin/index', [AdminQuestionController::class, 'store'])->name('admin.store');
-
+//Route::get('/questionBoard', [questionBoardController::class, 'index'])->name('questionBoard.index');
 
 //管理画面
 Route::prefix('admin/question')->name('admin.')->controller(AdminQuestionController::class)->group(function () {

@@ -93,7 +93,7 @@
     })
 
         //question load
-        $(function(){
+      $(function(){
       $.ajax({
         type: "get", //HTTP通信の種類
         url:"{{route('api.questionBoard.index')}}", //通信したいURL
