@@ -32,11 +32,12 @@
         color:#fefee3;
         text-decoration: none;
         font-family:"ＭＳ 明朝", sans-serif;
-        font-weight:bold;
+        
     }
 
     &__link::first-line{
         font-size: 30px;
+        font-weight:bolder;
     }
 
     &__link:hover{

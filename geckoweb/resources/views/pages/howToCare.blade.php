@@ -38,7 +38,7 @@
         
                 <h1 class = "pagesTitle">飼育方法</h1>
 
-                <ul>
+                <!-- <ul>
                     <li><a href='#cage'>Section 1</a></li>
                     <li><a href='#heater'>Section 2</a></li>
                     <li><a href='#bedding'>bedding</a></li>
@@ -49,7 +49,7 @@
                     <li><a href='#misshedding'>Section 4</a></li>
                     <li><a href='#multiplekeep'>Section 4</a></li>
                 </ul>
-            </div>
+            </div> -->
 
         </header>
 

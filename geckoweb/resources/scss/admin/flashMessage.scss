@@ -1,9 +1,13 @@
 .flashMessage{
     position: relative;
+    left:10%;
+    width:80%;
+    padding-bottom:90px;
     &__success{
         border-radius: 1em;
         color: black;
         font-size: 2rem;
         background-color: #98fb98;
+       padding:20px;
     }
 }

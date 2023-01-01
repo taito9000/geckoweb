@@ -1,13 +1,22 @@
 @extends('admin.layouts')
 
-@section('pageTitle')
-質問一覧
-@endsection
+
 
 @section('content')
-  
+<!-- 
+<div class="mainQaboard__questionsTitle">
+質問一覧
+</div>
+<div class="mainQaboard__questionsWrapper"> -->
 
-<div class="mainQaboard__questionsWrapper">
+<div class="mainQaboard__questionsTitle">
+      投稿された質問
+    </div>
+
+    <div class="mainQaboard__questionsWrapper">
+      <div class="mainQaboard__question">
+      </div>
+    </div>
 
 </div>
 

@@ -48,41 +48,46 @@
 
     <p class="mainQaboard__letters--first">
       お問い合わせ内容に対する回答は私見であり、それに対するいかなる責任も負いかねます。<br>
-      以上のことに同意の上、以下のお問い合わせ内容をご入力後、ご送信下さい。<br>
+      以上のことに同意の上、以下の必須項目の入力後にご送信下さい。<br>
     </p>
     <form action="{{route('questionBoard.store')}}" method="POST" enctype="multipart/form-data">
+      
+    <p class="mainQaboard__letters--contact">タイトル（必須）</p>
       @csrf
         <input id="title" class="mainQaboard__textTitle" type="text" placeholder="タイトルを入力してください。" name="title" value="{{old('title')}}">
         @if($errors->has('title'))
           <p class="mainQaboard__errorBox">{{$errors->first('title')}}</p>
         @endif
 
-        <p class="mainQaboard__letters--contact">お問い合わせ内容</p>
+        <p class="mainQaboard__letters--contact">お問い合わせ内容（必須）</p>
         
-      <textarea id="body" class="mainQaboard__textBody" type="text" cols="130" rows="20" placeholder="お問い合わせ内容を入力してください。" name="body">{{old('body')}}</textarea>
+      <textarea id="body" class="mainQaboard__textBody" type="text" cols="130" rows="20" placeholder="1400文字以内でお問い合わせ内容を入力してください。" name="body">{{old('body')}}</textarea>
         @if($errors->has('body'))
           <p class="mainQaboard__errorMessage">{{$errors->first('body')}}</p>
         @endif
 
       <div class="mainQaboard__img">
         <p class="mainQaboard__letters--img">画像</p>
-        <input id="image" type="file" accept='image/*' name="image">
-        <img id="previewImage">
-        <button type="submit">送信</button>
+        <input id="mainQaboard__image" type="file" accept='image/*' name="image">
+        <img id="mainQaboard__previewImage">
+        <button type="submit" id="mainQaboard__submit">送信</button>
       </div>
     </form>
+
     <div class="mainQaboard__questionsTitle">
       投稿された質問
     </div>
-    <div class="mainQaboard__questionsWrapper">
-      <div class="mainQaboard__question">
-        <div>qusetions</div>
+
+    <div class="mainQaboard__questionContents">
+      <div class="mainQaboard__questionsWrapper">
+      
       </div>
-    </div>
+    <div>
+
     <script>
           // 画像プレビュー
-    document.getElementById('image').addEventListener('change', e => {
-        const previewImageNode = document.getElementById('previewImage')
+    document.getElementById('mainQaboard__image').addEventListener('change', e => {
+        const previewImageNode = document.getElementById('mainQaboard__previewImage')
         const fileReader = new FileReader()
         fileReader.onload = () => previewImageNode.src = fileReader.result
         if (e.target.files.length > 0) {

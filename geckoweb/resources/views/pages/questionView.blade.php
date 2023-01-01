@@ -54,9 +54,11 @@
 
     <p class="mainQaboard__letters--first">
       お問い合わせ内容に対する回答は私見であり、それに対するいかなる責任も負いかねます。<br>
-      以上のことに同意の上、以下のお問い合わせ内容をご入力後、ご送信下さい。<br>
+      以上のことに同意の上、以下の必須項目の入力後にご送信下さい。<br>
     </p>
     <form action="{{route('questionBoard.store')}}" method="POST">
+      
+    <p class="mainQaboard__letters--contact">タイトル（必須）</p>
       @csrf
       <input type="hidden" name="parent" value="{{$question->id}}">
         <input id="title" class="mainQaboard__textTitle" type="text" placeholder="タイトルを入力してください。" name="title" value="{{old('title')}}">
@@ -64,7 +66,7 @@
           <p class="mainQaboard__errorBox">{{$errors->first('title')}}</p>
         @endif
 
-        <p class="mainQaboard__letters--contact">返信内容</p>
+        <p class="mainQaboard__letters--contact">返信内容（必須）</p>
         
         <textarea id="body" class="mainQaboard__textBody" type="text" cols="130" rows="20" placeholder="返信内容を入力してください。" name="body">{{old('body')}}</textarea>
         @if($errors->has('body'))

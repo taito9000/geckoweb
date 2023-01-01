@@ -40,9 +40,16 @@
 
         </header>
 
-        <div class="intro">
-            <div class="intro__article">
-                
+
+        
+        <div class="mainContents"> 
+            <div class="mainContents__title">
+         
+            </div>
+            <div class="mainContents__text">
+                <div class="mainContents__img">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/cyclone6 (1).jpg')}}">
+                </div>
                 僕が、ヒョウモントカゲモドキ（レオパードゲッコー、以下レオパ）を初めて飼育したのは２００５年の
                 ７歳の誕生日でした。</br>
                 </br>それ以来いろんな生き物を飼育し２０１８年からは約３年間レオパのブリーダーの下で働いておりました。</br></br>

@@ -30,8 +30,15 @@
 
 body{
     background-color:#4c956c;
-    min-height: 100vh;
+    //min-height: 100vh;
+   
+}
+input{
     
+    outline:none;
+}
+textarea{
+    outline:none;
 }
 
 // 2c6e49

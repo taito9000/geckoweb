@@ -40,24 +40,7 @@
         
                 <h1 class = "pagesTitle">品種紹介</h1>
             </div>
-
         </header>
-
-        <div class="mainContents"> 
-            <div class="mainContents__title">
-                タンジェリン
-            </div>
-            <div class="mainContents__text">
-            <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
-                </div>
-            タンジェリンはハイイエローをオレンジが強くなるように選別交配された品種になります。
-            有名なのは、アメリカの有名なブリーダーJMGReptileが作出した「ブラッドタンジェリン」や全てのタンジェリンのラインを
-            混ぜて、最強のタンジェリンを作ろうと作出された「マンダリンタンジェリン」が有名です。
-            
-            </div>
-            
-        </div>
 
         <div class="mainContents"> 
             <div class="mainContents__title">
@@ -72,6 +55,86 @@
             混ぜて、最強のタンジェリンを作ろうと作出された「マンダリンタンジェリン」が有名です。
             </div>
         </div>
+
+        <div class="mainContents"> 
+            <div class="mainContents__title">
+                ジェムスノー
+            </div>
+            <div class="mainContents__text">
+            <div class="mainContents__img">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                </div>
+            優性遺伝（優性遺伝）のスノーでマックスノーよりも白くなり黄色みが少ない気がします。同じ親から生まれた個体に
+    でも黄色が強い個体と弱い個体の差がマックスノーよりも激しく、スーパースノーのような見た目の個体もいます。
+            </div>
+            
+        </div>
+
+        <div class="mainContents"> 
+            <div class="mainContents__title">
+                アーミーグリーン
+            </div>
+            <div class="mainContents__text">
+            <div class="mainContents__img">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                </div>
+                LondonLeopaのAaron Jousiffe氏によって作出されたモルフで、現在（２０２２年）、１３世代目です。
+                ワイルド血統で緑が出ていた個体とラベンダーストライプをブリードして生まれた個体を緑が強くなるように
+                選別交配し続けたと聞いています。アーミーグリーンは生まれたときはハイイエローのような見た目ですが、
+                体色が「黒」→　「ラベンダー」→　「アーミーグリーン」と変化していきます。色の変化が激しいので、
+                成長を見るのが楽しい品種となっています。
+            </div>
+            
+        </div>
+
+        <div class="mainContents"> 
+            <div class="mainContents__title">
+                レッドダイヤモンド
+            </div>
+            <div class="mainContents__text">
+            <div class="mainContents__img">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+            </div>
+               写真のように、中央オレンジのストライプと２本の白いストライプがしっかりと表現されるように、選別交配された
+               モルフです。アダルトに成長してからも、濃いオレンジに白という、成長につれて無くなりやすい色がしっかりと残る
+               ところがこのモルフの１つの魅力です。
+               トレンパーアルビノ中では一番好きなラインで、僕の好きなモルフです。
+            </div>
+            
+        </div>
+
+        <div class="mainContents"> 
+            <div class="mainContents__title">
+                ホワイトアンドイエロー（ｗ＆ｙ）
+            </div>
+            <div class="mainContents__text">
+            <div class="mainContents__img">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+            </div>
+            写真はｗ＆ｙラプター（トレンパーエクリプス）です。ｗ＆ｙは、体の側面が真っ白になるホワイトサイドと
+            かけ合わせたモルフの色をより強める作用がある品種です。
+            </div>
+            
+        </div>
+
+        <div class="mainContents"> 
+            <div class="mainContents__title">
+                ブラックナイト
+            </div>
+            <div class="mainContents__text">
+            <div class="mainContents__img">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+            </div>
+            オランダのFerry Zulmond氏によって、２０年ほど黒のみを追求して選別交配された品種で、非常に高価です。
+            メラニスティック系統のモルフとしては最高峰だと思います。真っ黒だけでなく、模様のある個体もおり、そちらのほうが
+            好きという方もいらっしゃいます。真っ黒い個体でも、うっすらと模様が見える期間があったりと上がり下がりがある個体もおります。
+            生後半年はハイイエローのようなのに、生後２年頃に急に真っ黒になった個体を見たことがあります。その、逆もあるので、
+            購入される際は慎重に選んでいただきたいです。
+            </div>
+            
+        </div>
+
+        
 
     </body>
 </html>
