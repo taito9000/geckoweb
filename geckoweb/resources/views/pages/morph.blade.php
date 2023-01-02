@@ -48,7 +48,7 @@
             </div>
             <div class="mainContents__text">
                 <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/tantornade (1).jpg')}}">
                 </div>
             タンジェリンはハイイエローをオレンジが強くなるように選別交配された品種になります。
             有名なのは、アメリカの有名なブリーダーJMGReptileが作出した「ブラッドタンジェリン」や全てのタンジェリンのラインを
@@ -62,7 +62,7 @@
             </div>
             <div class="mainContents__text">
             <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/gemsnow (2).jpg')}}">
                 </div>
             優性遺伝（優性遺伝）のスノーでマックスノーよりも白くなり黄色みが少ない気がします。同じ親から生まれた個体に
     でも黄色が強い個体と弱い個体の差がマックスノーよりも激しく、スーパースノーのような見た目の個体もいます。
@@ -93,7 +93,7 @@
             </div>
             <div class="mainContents__text">
             <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/rd (1).jpg')}}">
             </div>
                写真のように、中央オレンジのストライプと２本の白いストライプがしっかりと表現されるように、選別交配された
                モルフです。アダルトに成長してからも、濃いオレンジに白という、成長につれて無くなりやすい色がしっかりと残る
@@ -109,10 +109,12 @@
             </div>
             <div class="mainContents__text">
             <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/wyraptor (1).jpg')}}">
             </div>
             写真はｗ＆ｙラプター（トレンパーエクリプス）です。ｗ＆ｙは、体の側面が真っ白になるホワイトサイドと
-            かけ合わせたモルフの色をより強める作用がある品種です。
+            かけ合わせたモルフの色をより強めるという特徴がある品種です。いろいろな他のモルフと組み合わさって、それぞれを
+            より、派手にしてくれるので、僕の好きなモルフです。遺伝的に神経障害のある子もいますので、購入を考えられる際には
+            歩いてるところを実際に見せてもらい、そのような症状がないかどうか確認しましょう。
             </div>
             
         </div>
@@ -123,7 +125,7 @@
             </div>
             <div class="mainContents__text">
             <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                    <img class="mainContents__imgContents" src="{{ asset('/photo/blacknight (1).jpg')}}">
             </div>
             オランダのFerry Zulmond氏によって、２０年ほど黒のみを追求して選別交配された品種で、非常に高価です。
             メラニスティック系統のモルフとしては最高峰だと思います。真っ黒だけでなく、模様のある個体もおり、そちらのほうが
