@@ -14,24 +14,30 @@ class questionBoardController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            "title" => ['required', 'string', 'max:255'],
-            "body" => ['required', 'string', 'max:1500'],
-            "image"=>['nullable'],
-            'parent' => [
-                function ($attribute, $value, $fail) {
-                    if (isset($value)) {
-                        $parent = Question::find($value);
-                        if (!isset($parent)) {
-                            $fail('回答先の質問が存在しません');
-                        } elseif (isset($parent->parent)) {
-                            $fail('回答には回答できません');
-                        }
+        if ('title') {
+            $request['title'] = 'nullable';
+        }
+    $request->validate([
+        "title" =>['required', 'string', 'max:255'],
+        "body" => ['required', 'string', 'max:1500'],
+        "image"=>['nullable'],
+        'parent' => [
+            function ($attribute, $value, $fail) {
+                if (isset($value)) {
+                    $parent = Question::find($value);
+                    if (!isset($parent)) {
+                        $fail('回答先の質問が存在しません');
+                    } elseif (isset($parent->parent)) {
+                        $fail('回答には回答できません');
                     }
-                },
-            ],
-        ]);
+                }
+            },
+        ],
+    ]);
 
+    
+
+    
         $question = new Question; //Questionモデルのインスタンス作成
         $question->title = $request->title; //タイトル
         $image = $request->file('image'); //画像

@@ -57,14 +57,14 @@
       以上のことに同意の上、以下の必須項目の入力後にご送信下さい。<br>
     </p>
     <form action="{{route('questionBoard.store')}}" method="POST">
-      
-    <p class="mainQaboard__letters--contact">タイトル（必須）</p>
+<!--       
+    <p class="mainQaboard__letters--contact">タイトル（必須）</p> -->
       @csrf
       <input type="hidden" name="parent" value="{{$question->id}}">
-        <input id="title" class="mainQaboard__textTitle" type="text" placeholder="タイトルを入力してください。" name="title" value="{{old('title')}}">
+        <!-- <input id="title" class="mainQaboard__textTitle" type="text" placeholder="タイトルを入力してください。" name="title" value="{{old('title')}}">
         @if($errors->has('title'))
           <p class="mainQaboard__errorBox">{{$errors->first('title')}}</p>
-        @endif
+        @endif -->
 
         <p class="mainQaboard__letters--contact">返信内容（必須）</p>
         
@@ -115,9 +115,7 @@
                 `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
                 ''}
               </div>
-              <div class="mainQaboard__questionTitle">
-                ${question.title}
-              </div>
+            
               <div class="mainQaboard__questionBody">
                 ${question.body.replace(/\r?\n/g, '<br>')}
               </div> 

@@ -9,7 +9,7 @@
         <header class="header">
             <div class="videoZone">
                 <video class="videoZone__video" muted autoplay loop playsinline>
-                    <source src="{{ asset('/video/reptile.mp4')}}" type="video/mp4" >
+                    <source src="{{ asset('video/leos001.mp4')}}" type="video/mp4" >
                 </video>
             </div>
             <div class="menuLeoImg--welcome">

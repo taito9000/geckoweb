@@ -69,9 +69,9 @@
                 `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
                 ''}
               </div>
-              <div class="mainQaboard__questionTitle">
-                ${question.title}
-              </div>
+              // <div class="mainQaboard__questionTitle">
+              //   ${question.title}
+              // </div>
               <div class="mainQaboard__questionBody">
                 ${question.body.replace(/\r?\n/g, '<br>')}
               </div>

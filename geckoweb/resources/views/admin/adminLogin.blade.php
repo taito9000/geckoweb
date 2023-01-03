@@ -4,7 +4,7 @@
 
 @section('content')
 
-
+<input>
 
 <script>
     //question load
