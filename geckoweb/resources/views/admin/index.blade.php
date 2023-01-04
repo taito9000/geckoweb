@@ -4,10 +4,12 @@
 
 @section('content')
 
+<div class="mainQaboard">
 <div class="mainQaboard__questionsTitle">
 質問一覧
 </div>
 <div class="mainQaboard__questionsWrapper"> 
+  <div>
 
 <!-- <div class="mainQaboard__questionsTitle">
       投稿された質問
