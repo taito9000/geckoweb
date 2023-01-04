@@ -129,7 +129,6 @@
         console.log(error.statusText)
       })
     });
-
     </script>
     </body>
 </html>

@@ -3,13 +3,13 @@
 
 
 @section('content')
-<!-- 
+
 <div class="mainQaboard__questionsTitle">
 質問一覧
 </div>
-<div class="mainQaboard__questionsWrapper"> -->
+<div class="mainQaboard__questionsWrapper"> 
 
-<div class="mainQaboard__questionsTitle">
+<!-- <div class="mainQaboard__questionsTitle">
       投稿された質問
     </div>
 
@@ -18,7 +18,7 @@
       </div>
     </div>
 
-</div>
+</div> -->
 
 
 <script>

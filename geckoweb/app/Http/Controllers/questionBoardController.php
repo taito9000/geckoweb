@@ -14,11 +14,8 @@ class questionBoardController extends Controller
 
     public function store(Request $request)
     {
-        if ('title') {
-            $request['title'] = 'nullable';
-        }
     $request->validate([
-        "title" =>['required', 'string', 'max:255'],
+        "title" =>['nullable','required_without:parent', 'string', 'max:255'],
         "body" => ['required', 'string', 'max:1500'],
         "image"=>['nullable'],
         'parent' => [

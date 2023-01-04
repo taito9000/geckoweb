@@ -7,20 +7,23 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     </head>
     <body>
-        <header class="header">
+        
+            <header class="header">
             <div class="menuLeoImg">
                 <a href="/">
-                <img  class="menuLeoImg__img" src="{{ asset('/photo/leo0002 (2).jpg')}}">
+                    <img  class="menuLeoImg__img" src="{{ asset('/photo/leo0002 (2).jpg')}}">
                 </a>
             </div>
+
             <div class="pagesMenu">
+
                 <ul class="pagesMenu__ul">
                     <li class="pagesMenu__item">
                         <a class="pagesMenu__link" href="{{route('admin.index')}}">質問一覧</a>
                     </li>
                 </ul>
-                <h1 class = "pagesTitle">@yield('pageTitle')</h1>
-            </div>
+        
+                <h1 class = "pagesTitle">質問一覧</h1>
         </header>
         <!-- フラッシュメッセージ -->
         @if (session('success'))

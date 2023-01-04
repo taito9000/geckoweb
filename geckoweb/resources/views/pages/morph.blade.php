@@ -70,22 +70,6 @@
             
         </div>
 
-        <div class="mainContents"> 
-            <div class="mainContents__title">
-                アーミーグリーン
-            </div>
-            <div class="mainContents__text">
-            <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/leo0002 (2).jpg')}}">
-                </div>
-                LondonLeopaのAaron Jousiffe氏によって作出されたモルフで、現在（２０２２年）、１３世代目です。
-                ワイルド血統で緑が出ていた個体とラベンダーストライプをブリードして生まれた個体を緑が強くなるように
-                選別交配し続けたと聞いています。アーミーグリーンは生まれたときはハイイエローのような見た目ですが、
-                体色が「黒」→　「ラベンダー」→　「アーミーグリーン」と変化していきます。色の変化が激しいので、
-                成長を見るのが楽しい品種となっています。
-            </div>
-            
-        </div>
 
         <div class="mainContents"> 
             <div class="mainContents__title">
@@ -135,8 +119,5 @@
             </div>
             
         </div>
-
-        
-
     </body>
 </html>

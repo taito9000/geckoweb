@@ -5,7 +5,7 @@
         @vite('resources/scss/app.scss', 'resources/js/app.js') 
               <title>Geckoweb</title>
               
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     </head>
     <body>
         <header class="header">
@@ -14,11 +14,8 @@
                     <img  class="menuLeoImg__img" src="{{ asset('/photo/leo0002 (2).jpg')}}">
                 </a>
             </div>
-
             <div class="pagesMenu">
-
                 <ul class="pagesMenu__ul">
-                    
                     <li class="pagesMenu__item">
                         <a class="pagesMenu__link" href="/intro">INTRO</a>
                     </li>
@@ -35,22 +32,7 @@
                         <a class="pagesMenu__link" href="/questionBoard">質問板</a>
                     </li>
                 </ul>
-        
                 <h1 class = "pagesTitle">飼育方法</h1>
-
-                <!-- <ul>
-                    <li><a href='#cage'>Section 1</a></li>
-                    <li><a href='#heater'>Section 2</a></li>
-                    <li><a href='#bedding'>bedding</a></li>
-                    <li><a href='#shelter'>Section 4</a></li>
-                    <li><a href='#thermometer'>Section 1</a></li>
-                    <li><a href='#waterbowl'>Section 2</a></li>
-                    <li><a href='#supplement'>Section 3</a></li>
-                    <li><a href='#misshedding'>Section 4</a></li>
-                    <li><a href='#multiplekeep'>Section 4</a></li>
-                </ul>
-            </div> -->
-
         </header>
 
         <div class="mainContents"> 
@@ -154,9 +136,7 @@
             サプリメント
             </div><a href='#supplement'></a>
             <div class="mainContents__text">
-                <div class="mainContents__img">
-                    <img class="mainContents__imgContents" src="{{ asset('/photo/waterbowl (1).jpg')}}">
-                </div>
+              
                 ベビーから購入される方は、必ず購入し、生後１～３か月給餌の際にはほとんど毎回与えてほしいです。
                     レオパは適正なサイズに成長できれば、生後半年ほどで繁殖が可能になります。それ程成長が早いので、
                     小さい時ほど多くのカルシウムを必要とします。多くの個体はカルシウムなしのコオロギだけでもしっかり
