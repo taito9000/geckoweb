@@ -38,38 +38,37 @@
       <div class="mainQaboard__questionsWrapper">
         
       </div>
-    </div>
 
-    <!-- ▼▼▼▼エラーメッセージ▼▼▼▼　-->
-    @if($errors->any())
-      <div class="mainQaboard__errorBox">
-          @foreach($errors->all() as $error)
-              <p>{{$error}}</p>
-          @endforeach
-        </div>
-    @endif
-    <!-- ▲▲▲▲エラーメッセージ▲▲▲▲　-->
-
-    <p class="mainQaboard__letters--first">
-      お問い合わせ内容に対する回答は私見であり、それに対するいかなる責任も負いかねます。<br>
-      以上のことに同意の上、以下の必須項目の入力後にご送信下さい。<br>
-    </p>
-    <form action="{{route('questionBoard.store')}}" method="POST">
-      @csrf
-      <input type="hidden" name="parent" value="{{$question->id}}">
-      <p class="mainQaboard__letters--contact">返信内容（必須）</p>     
-      <textarea id="body" class="mainQaboard__textBody" type="text" cols="130" rows="20" placeholder="返信内容を入力してください。" name="body">{{old('body')}}</textarea>
-      @if($errors->has('body'))
-        <p class="mainQaboard__errorMessage">{{$errors->first('body')}}</p>
+      <!-- ▼▼▼▼エラーメッセージ▼▼▼▼　-->
+      @if($errors->any())
+        <div class="mainQaboard__errorBox">
+            @foreach($errors->all() as $error)
+                <p>{{$error}}</p>
+            @endforeach
+          </div>
       @endif
-      <div class="mainQaboard__img">
-        <p class="mainQaboard__letters--img">画像</p>
-        <input id="image" type="file" accept='image/*' name="image">
-        <img id="previewImage">
-        <button type="submit">送信</button>
+      <!-- ▲▲▲▲エラーメッセージ▲▲▲▲　-->
+
+      <p class="mainQaboard__letters--first">
+        お問い合わせ内容に対する回答は私見であり、それに対するいかなる責任も負いかねます。<br>
+        以上のことに同意の上、以下の必須項目の入力後にご送信下さい。<br>
+      </p>
+      <form action="{{route('questionBoard.store')}}" method="POST">
+        @csrf
+        <input type="hidden" name="parent" value="{{$question->id}}">
+        <p class="mainQaboard__letters--contact">返信内容（必須）</p>     
+        <textarea id="body" class="mainQaboard__textBody" type="text" cols="130" rows="20" placeholder="返信内容を入力してください。" name="body">{{old('body')}}</textarea>
+        @if($errors->has('body'))
+          <p class="mainQaboard__errorMessage">{{$errors->first('body')}}</p>
+        @endif
+        <div class="mainQaboard__img">
+          <p class="mainQaboard__letters--img">画像</p>
+          <input id="image" type="file" accept='image/*' name="image">
+          <img id="previewImage">
+          <button type="submit">送信</button>
       </div>
     </form>
-    
+</div>
     <script>
 
       const questionId = {{$question->id}};
