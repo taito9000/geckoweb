@@ -1,18 +1,15 @@
 
 .pagesMenu {
     position: relative;
-   
     left: 50%;
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    
 
     &__ul{  
         padding-right: 35px;
         padding-top:40px;
-       
         text-align: right;
         border-bottom:solid 2px #fefee3;
         width:75%;
@@ -27,7 +24,6 @@
         padding-bottom:32px;
         
     }
-    
 
     &__link{
         display: block;
@@ -44,9 +40,4 @@
     &__link:hover{
         transform: perspective(100px) translateZ(20px);
     }
-
- 
-
-
-
 }

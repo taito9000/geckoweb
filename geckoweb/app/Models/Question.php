@@ -8,6 +8,5 @@ use Controllers\Admin\AdminQuestionController;
 class Question extends Model
 {
     use HasFactory;
-
     protected $fillable = ['title', 'body', 'image','parent'];
 }

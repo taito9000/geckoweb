@@ -40,10 +40,10 @@ Route::get('morph', function () {
 
 //お問い合わせフォーム
 Route::prefix('questionBoard')->name('questionBoard.')->controller(questionBoardController::class)->group(function () {
-Route::get('','index')->name('index');    //一覧　questionBoard.index
-Route::post('','store')->name('store');; //質問保存 questionBoard.store
-Route::get('complete','complete')->name('complete'); //完了画面 questionBoard.complete
-Route::get('{question}','show')->name('show');    //質問詳細表示 questionBoard.show
+    Route::get('','index')->name('index');    //一覧　questionBoard.index
+    Route::post('','store')->name('store');; //質問保存 questionBoard.store
+    Route::get('complete','complete')->name('complete'); //完了画面 questionBoard.complete
+    Route::get('{question}','show')->name('show');    //質問詳細表示 questionBoard.show
 });
 
 //Route::get('/questionBoard', [questionBoardController::class, 'index'])->name('questionBoard.index');

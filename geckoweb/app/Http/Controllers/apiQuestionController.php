@@ -32,7 +32,7 @@ class apiQuestionController extends Controller
         $questions = collect([$question]);//表示対象の質問をコレクションに
         $answers = Question::where('parent',$question->id)->get();//親IDが表示対象の質問のレコード、つまり表示対象の質問の回答を取得
         $questionsAndAnswers = $questions->merge($answers);//表示対象の質問と回答をマージ
-
+        
         return response()->json($questionsAndAnswers);
     }
 

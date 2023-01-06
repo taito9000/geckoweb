@@ -3,13 +3,9 @@
     position:absolute;
     top:30%;
     left:14%;
-   
     font-size:70px;
     font-family:"ＭＳ 明朝";
     text-align:left;
-    
-    //#4c956c
-
     &__article{
         position:relative;
         width:75%;
@@ -21,5 +17,4 @@
         background-color:#2c6e49;
         border-radius:30px;
     }
-
 }

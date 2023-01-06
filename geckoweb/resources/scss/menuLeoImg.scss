@@ -1,28 +1,26 @@
 .menuLeoImg{
     top:4%;   
     left:13%;
-
     position:relative;
     overflow: hidden;
     width:100px;
     height:100px;
     border-radius:50%;
     z-index:2;
-
     cursor: pointer;
         &__img {
-        position:relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        height:100%;
-        
-        &__img:hover{
-            transform: perspective(200px) translateZ(100px);
+            position:relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            height:100%;
+            
+            &__img:hover{
+                transform: perspective(200px) translateZ(100px);
+            }
         }
-    }
 }
 .menuLeoImg--welcome{
     top:4%;    
@@ -43,10 +41,10 @@
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         height:100%;
-        
-        &__img:hover{
-            transform: perspective(200px) translateZ(100px);
+            
+            &__img:hover{
+                transform: perspective(200px) translateZ(100px);
+            }
         }
-    }
 }
 

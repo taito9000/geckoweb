@@ -1,13 +1,12 @@
 .mainContents {
-  
-    position: relative;
-    font-family:"sans-serif";
-    max-width:80%;
-    min-height:20%;
-    background:#2c6e49;
-    left:11%;
-    margin-bottom:90px;
-    border-radius:30px;
+  position: relative;
+  font-family:"sans-serif";
+  max-width:80%;
+  min-height:20%;
+  background:#2c6e49;
+  left:11%;
+  margin-bottom:90px;
+  border-radius:30px;
 
   &__title {
     padding-top:4.5%;
@@ -15,11 +14,8 @@
     font-size:2em;
     font-weight: bold;
     color:#fefee3;
-  
-  
   }
 
- 
   &__text {
     display:inline-block;
     position:relative;
@@ -30,11 +26,10 @@
   }
 
   &__img {
-    
     float:right;
   }
+  
   &__imgContents{
     border-radius:30px;
   }
- 
 }
