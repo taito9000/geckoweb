@@ -77,7 +77,7 @@
 
     <script>
       // 画像プレビュー
-      document.getElementById('mainQaboard__image').addEventListener('change', e => {
+      document.getElementById("mainQaboard__image").addEventListener('change', e => {
         const previewImageNode = document.getElementById('mainQaboard__previewImage')
         const fileReader = new FileReader()
         fileReader.onload = () => previewImageNode.src = fileReader.result
@@ -86,7 +86,7 @@
         }else{
           previewImageNode.src = previewImageNode.dataset.noimage
         }
-        })
+      })
         //question load
         $(function(){
         $.ajax({
@@ -100,10 +100,7 @@
             let questions = ''; 
             threads.forEach(question => { 
               const question_element = 
-                question.parent ? 
-                  '' :
-                  `
-                    <div class="mainQaboard__question${question.parent?'--child':''}">
+                question.parent ? '' :`<div class="mainQaboard__question${question.parent?'--child':''}">
                       <div class="mainQaboard__questionImageWrapper">
                         ${question.image ? 
                         `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 

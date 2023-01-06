@@ -22,7 +22,7 @@ class AdminQuestionController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            "title" => ['required', 'string', 'max:255'],
+            "title" => ['nullable','required_without:parent', 'string', 'max:255'],
             "body" => ['required', 'string', 'max:1500'],
             'parent' => [
                 function ($attribute, $value, $fail) {

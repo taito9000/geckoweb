@@ -89,10 +89,13 @@
         background-color:#fefee3;
         padding-left:10px;
         &--child{
-            margin-top:40px;
+            position:relative;
+            font-size:20px;
+            text-align:left;
             color: #2c6e49;
             background-color:#fefee3;
             padding-left:10px;
+            margin-top:40px;
         }
     }
 
@@ -117,8 +120,11 @@
         padding-bottom: 20px;
         background-color:#fefee3;
         &--large{
-            max-width: 250px;
-            max-height: 250px;
+            max-width: 100px;
+            max-height: 100px;
+            
+            background-color:#fefee3;
+       
         }
     }
 
@@ -130,15 +136,17 @@
 
     &__questionTitle{
         font-size: 1.3em;
-        padding:30px 0px 40px 10px;
-        width:40%;
+        padding:40px 100px 10px 10px;
+        max-width:70%;
+        min-width:40%;
         color:#2c6e49;
         display:inline-block;
+        
     }
 
     &__questionBody{
         font-size: 1.3em;
-        padding:0px 0px 40px 10px;
+        padding:0px 0px 4% 10px;
         display:inline-block;
     }
     
@@ -148,9 +156,9 @@
         color: #fff;
         background-color: #eb6100;
         border-radius: 20px;
-        position:absolute;
-        top:40%;
-        right:10%;
+        position: relative;
+        left:25em;
+        
     }
 
     &__questionDeleteButton:hover{

@@ -63,9 +63,9 @@
         @endif
         <div class="mainQaboard__img">
           <p class="mainQaboard__letters--img">画像</p>
-          <input id="image" type="file" accept='image/*' name="image">
-          <img id="previewImage">
-          <button type="submit">送信</button>
+          <input id="mainQaboard__image" type="file" accept='image/*' name="image">
+          <img id="mainQaboard__previewImage">
+          <button type="submit" id="mainQaboard__submit">送信</button>
       </div>
     </form>
 </div>
@@ -74,8 +74,8 @@
       const questionId = {{$question->id}};
 
       // 画像プレビュー
-      document.getElementById('image').addEventListener('change', e => {
-        const previewImageNode = document.getElementById('previewImage')
+      document.getElementById('mainQaboard__image').addEventListener('change', e => {
+        const previewImageNode = document.getElementById('mainQaboard__previewImage')
         const fileReader = new FileReader()
         fileReader.onload = () => previewImageNode.src = fileReader.result
         if (e.target.files.length > 0) {
@@ -95,19 +95,28 @@
       .done((res)=>{
         //お問い合わせHTML作成
         res.forEach(question => {
-          const question_element = `
+          const question_element = 
+          `
             <div class="mainQaboard__question${question.parent?'--child':''}">
-              <div class="mainQaboard__questionImageWrapper--large">
-              ${question.image ? 
-                `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
+              
+            <div class="mainQaboard__questionImageWrapper--large">
+              ${question.image? 
+                `<img class="mainQaboard__questionImage" src="/storage/${question.image}">`: 
                 ''}
               </div>
+
+              ${question.parent?`<div class="mainQaboard__questionTitle">
+          
+              </div>`:`
               <div class="mainQaboard__questionTitle">
               ${question.title}
-              </div>            
+              </div>
+              `}
+
               <div class="mainQaboard__questionBody">
                 ${question.body.replace(/\r?\n/g, '<br>')}
               </div> 
+             
             </div>
           `
           $(".mainQaboard__questionsWrapper").append(question_element);
