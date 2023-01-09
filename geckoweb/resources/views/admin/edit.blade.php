@@ -91,10 +91,10 @@ $(function(){
           </div>
 
           <form action="/admin/question/${question.id}" method="post">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="mainQaboard__questionDeleteButton">削除</button>
-              </form>
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="mainQaboard__questionDeleteButton">削除</button>
+          </form>
 
         </div>
       `

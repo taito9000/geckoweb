@@ -27,23 +27,25 @@ $(function(){
             threads.forEach(question => { 
               const question_element = 
                 question.parent ? '' :`<div class="mainQaboard__question${question.parent?'--child':''}">
-                      <div class="mainQaboard__questionImageWrapper">
-                        ${question.image ? 
-                        `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
-                        ''}
-                      </div>
-                      <div class="mainQaboard__questionTitle">
-              ${question.parent? `${question.title}` : 
-                `<a href="/admin/question/${question.id}/edit">${question.title}</a>`}
+                
+                  <div class="mainQaboard__questionImageWrapper">
+                    ${question.image ? 
+                    `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
+                    ''}
+                  </div>
+
+                  <div class="mainQaboard__questionTitle">
+                    ${question.parent? `${question.title}` : 
+                    `<a href="/admin/question/${question.id}/edit">${question.title}</a>`}
                   </div>
                   <form action="/admin/question/${question.id}" method="post">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="mainQaboard__questionDeleteButton">削除</button>
-              </form>
-              </div>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="mainQaboard__questionDeleteButton">削除</button>
+                  </form>
+                </div>
               
-                  `
+                `
               questions += question_element; //使用して組み立てたHTMLを追加して行く
             });
             $(".mainQaboard__questionsWrapper").append(questions);//ラッパー要素に組み立てたHTMLを追加

@@ -100,17 +100,21 @@
             let questions = ''; 
             threads.forEach(question => { 
               const question_element = 
-                question.parent ? '' :`<div class="mainQaboard__question${question.parent?'--child':''}">
-                      <div class="mainQaboard__questionImageWrapper">
-                        ${question.image ? 
-                        `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
-                        ''}
-                      </div>
-                      <div class="mainQaboard__questionTitle">
-                        <a href="/questionBoard/${question.id}">${question.title}</a>
-                      </div>
+                question.parent ? '' :
+                `
+                  <div class="mainQaboard__question${question.parent?'--child':''}">
+                    <div class="mainQaboard__questionImageWrapper">
+                      ${question.image ? 
+                      `<img class="mainQaboard__questionImage" src="/storage/${question.image}">` : 
+                      ''}
                     </div>
-                  `
+
+                    <div class="mainQaboard__questionTitle">
+                      <a href="/questionBoard/${question.id}">${question.title}</a>
+                    </div>
+                    
+                  </div>
+                `
               questions += question_element; //使用して組み立てたHTMLを追加して行く
             });
             $(".mainQaboard__questionsWrapper").append(questions);//ラッパー要素に組み立てたHTMLを追加

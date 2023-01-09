@@ -122,15 +122,13 @@
         &--large{
             max-width: 100px;
             max-height: 100px;
-            
             background-color:#fefee3;
-       
         }
     }
 
     &__questionImage{
         max-width:70%;
-        padding:30px;
+        padding-top:30px;
         float:left;
     }
 
@@ -156,13 +154,16 @@
         color: #fff;
         background-color: #eb6100;
         border-radius: 20px;
-        position: relative;
-        left:25em;
-        
+        right:3%;
+        bottom:3%;
+        position:absolute;
     }
 
     &__questionDeleteButton:hover{
         background: #f56500;
+    }
+    form {
+        display: inline-block;
     }
 
     #mainQaboard__previewImage{

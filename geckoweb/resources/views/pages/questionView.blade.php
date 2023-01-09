@@ -53,7 +53,7 @@
         お問い合わせ内容に対する回答は私見であり、それに対するいかなる責任も負いかねます。<br>
         以上のことに同意の上、以下の必須項目の入力後にご送信下さい。<br>
       </p>
-      <form action="{{route('questionBoard.store')}}" method="POST">
+      <form action="{{route('questionBoard.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="parent" value="{{$question->id}}">
         <p class="mainQaboard__letters--contact">返信内容（必須）</p>     
